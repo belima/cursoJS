@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BR HUEHUE</title>
+
+    <link rel="stylesheet" href="excasa.css">
+</head>
+<body>
+    <div id="pergunta">
+        <h1>Em qual país vc nasceu?</h1>
+        <input type="text" name="país" id="país">
+        <input type="submit" value="Enviar" id="btn_enviar" onclick="brasilsilsil()">
+    </div>
+    <div id="resposta">
+        <p>BR? BR? HUHEHEHEUH</p>
+    </div>
+
+    <script>
+
+        function brasilsilsil(){
+            var uipaís = document.querySelector('input#país')
+            var upaís = uipaís.value
+            
+            var txtres = document.querySelector('div#resposta p')
+
+            if (upaís == 'Brasil') {
+                txtres.innerHTML = 'BRASIL SIL SIL'
+            } else {
+                txtres.innerHTML = `${upaís}?! Vc não é BR hue né?!`
+            }
+        }
+    </script>
+</body>
+</html>
